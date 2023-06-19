@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+span {
+  letter-spacing: 1rem;
+  font-family: roboto;
+  font-size: 2rem;
+  font-weight: 100;
+  color: white;
+
+}
+
+.construction {
+  
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+img {
+  animation: logo 1.5s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  width: 200px;
+}
+
+p{
+  color: white;
+  font-family: roboto;
+padding-top: 25px;
+}
+
+.social-reseaux {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.fa-brands, .fab {
+  font-size: 2rem;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  text-decoration: none;
+}
+
+@keyframes logo {
+  0%{
+    transform: translateY(3rem);
+    opacity: 0;
+  }
+  /* 20%{
+    opacity: 0;
+  } */
+  
+  100%{
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+  
+}
+
+@media screen and (max-width:650px) {
+  span {letter-spacing : 0.5rem;
+    font-size: 1.2rem;
+
+}
+}
